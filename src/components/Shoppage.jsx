@@ -18,41 +18,56 @@ function Shoppage() {
         </form>
       </div>
       <div>
-        <img src="" alt="" />
+        <img
+          src="/src/assets/images/ragged-jeans.png"
+          alt="blue-ragged-jeans image"
+        />
         <p>Blue Rageed Jeans</p>
         <p>KSh 2,250</p>
         <MdFavoriteBorder />
       </div>
       <div>
-        <img src="" alt="" />
+        <img
+          src="/src/assets/images/leather-jacket.png"
+          alt="brown-leather-jacket image"
+        />
         <p>Brown Leather Jacket</p>
         <p>KSh 2,250</p>
         <MdFavoriteBorder />
       </div>
 
       <div>
-        <img src="" alt="" />
+        <img
+          src="/src/assets/images/dress.png"
+          alt="slim-banquet-dress image"
+        />
         <p>Slim Banquet Dress</p>
         <p>KSh 2,250</p>
         <MdFavoriteBorder />
       </div>
 
       <div>
-        <img src="" alt="" />
+        <img src="/src/assets/images/denin.png" alt="blue-denin-jacket image" />
         <p>Blue Denim Jacket</p>
         <p>KSh 2,250</p>
         <MdFavoriteBorder />
       </div>
 
       <div>
-        <img src="" alt="" />
+        <img
+          src="/src/assets/images/leather-jacket.png"
+          alt="brown-leather-jacket image"
+        />
         <p>Brown Leather Jacket</p>
         <p>KSh 2,250</p>
         <MdFavoriteBorder />
       </div>
 
       <div>
-        <img src="" alt="" />
+        <img
+          src="/src/assets/images/quartz-watch.png"
+          alt="quartz-men's-watch image"
+        />
         <p>Quartz Men’s Watch</p>
         <p>KSh 2,250</p>
         <MdFavoriteBorder />
