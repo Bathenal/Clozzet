@@ -4,12 +4,12 @@ function Hero() {
   return (
     <section className="container mx-auto flex justify-between">
       <div>
-        <div>
-          <h2 className="text-wrap pt-3 font-san serif text-5xl">
+        <div className="font-san serif text-2xl my-8 text-wrap">
+          <h2 className="text-wrap pt-3 font-san serif text-5xl font-bold">
             Choose the look <br></br>
             that <span className="text-green-500" >suits</span> you best
           </h2>
-          <p>
+          <p className="my-8">
             Every day is a fashion show & the world is your runway. Clozzet will
             <br></br>
             elevate your wardrobe with the best collections. Be exclusive, Be{" "}
@@ -19,7 +19,7 @@ function Hero() {
             beautiful.True style never dies.
           </p>
         </div>
-        <div className="flex text-center py-4 gap-10">
+        <div className="flex text-center py-4 gap-10 font-san serif text-2xl font-bold my-6">
           <button className="border border-green py-3 px-[4em] rounded-full bg-green-300	">
             Shop Now
           </button>

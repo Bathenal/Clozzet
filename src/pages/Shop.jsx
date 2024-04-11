@@ -1,10 +1,10 @@
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
-import Shoppage from "../components/Shoppage";
+import Shoppages from "../components/Shoppages";
 function Shop() {
   return (
     <div>
-     <Shoppage/>
+     <Shoppages/>
     </div>
   );
 }
