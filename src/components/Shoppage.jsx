@@ -2,35 +2,25 @@ import { IoIosSearch } from "react-icons/io";
 import { MdFavoriteBorder } from "react-icons/md";
 import { SlArrowDown } from "react-icons/sl";
 
-function Shoppage(img, title) {
+function Shoppage({ img, title,price, cart, setCart }) {
   return (
     <section>
-      <div >
+      <div className="flex flex-wrap ">
         <div>
-          <form
-            action=""
-            className="mr-4 border   border-green-400 py-4 px-20 flex rounded-full"
-          >
-            <IoIosSearch size={30} />
-            <input
-              type="text"
-              placeholder="Search Products and categories"
-              className="	"
-            />
-            <input type="text" placeholder="Filter Category" />
-            <SlArrowDown />
-          </form>
-        </div>
-        <div className="flex flex-wrap h-[100%] w-[100%]">
-          <div className="bg-gray-400">
-            <div>
-              <img src={img} />
-            </div>
-            <div>
-              <p>{title}</p>
-              <p>KSh 2,250</p>
-              <MdFavoriteBorder />
-            </div>
+          <div className="bg-[#F0EFEF] flex gap-2 h-[400px] w-[300px] justify-center relative group">
+            <img src={img} width={300} />
+            <button
+              className="bg-green-300 text-white text-2xl text-center absolute bottom-0 w-[100%] rounded-xl hidden group-hover:block"
+              onClick={(e) => handleAddToCart(e, { img, title,price })}
+            >
+              ADD TO CART
+            </button>
+          </div>
+          <div>
+            <p className="flex items-center gap-10 text-2xl">
+              {title} <MdFavoriteBorder />
+            </p>
+            <p className="text-green-500 text-2xl">KSh 2,250</p>
           </div>
         </div>
       </div>

@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import  { useState } from "react";
 import Home from "../pages/Home.jsx";
 import Notfound from "../pages/Notfound.jsx";
 import Layout from "../pages/Layout.jsx";
@@ -11,6 +12,10 @@ import Shop from "../pages/Shop.jsx";
 import Singleproduct from "../pages/Singleproduct.jsx";
 
 function Router() {
+  
+    const [cart, setCart] = useState([]);
+    
+  
   return (
     <BrowserRouter>
       <Routes>
@@ -18,7 +23,7 @@ function Router() {
           path="/"
           element={
             <Layout>
-              <Home />
+              <Home cart={Cart} setCart={setCart} />
             </Layout>
           }
         />
@@ -27,7 +32,7 @@ function Router() {
           path="/shop"
           element={
             <Layout>
-              <Shop />
+              <Shop cart={Cart} setCart={setCart}/>
             </Layout>
           }
         />
@@ -51,7 +56,7 @@ function Router() {
           path="/cart"
           element={
             <Layout>
-              <Cart />
+              <Cart  cart={Cart} setCart={setCart}/>
             </Layout>
           }
         />

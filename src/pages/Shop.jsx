@@ -3,6 +3,7 @@ import Footer from "../components/Footer";
 import Shoppages from "../components/Shoppages";
 function Shop() {
   return (
+    
     <div>
      <Shoppages/>
     </div>
