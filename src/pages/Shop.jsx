@@ -1,11 +1,10 @@
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import Shoppages from "../components/Shoppages";
-function Shop() {
+function Shop({ cart, setCart }) {
   return (
-    
     <div>
-     <Shoppages/>
+      <Shoppages cart={cart} setCart={setCart} />
     </div>
   );
 }

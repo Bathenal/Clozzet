@@ -26,12 +26,7 @@ import { SlArrowDown } from "react-icons/sl";
 import { IoIosArrowForward } from "react-icons/io";
 import { IoIosArrowBack } from "react-icons/io";
 
-function Shoppages({cart, setCart}) {
-  const handleAddToCart=(e, product)=>{
-if(e.target.textContent.toLowerCase()==="add to cart");
-setCart(prev=>[...prev,product])
-e.target.textContent==="Remove from Cart";
-  }
+function Shoppages({ cart, setCart }) {
   return (
     <div>
       <div className="flex justify-center items-center">
@@ -45,46 +40,176 @@ e.target.textContent==="Remove from Cart";
             placeholder="Search Products and categories"
             className="	"
           />
-          <input type="text" placeholder="Filter Category" />
+          <input
+            type="text"
+            placeholder="Filter Category"
+            cart={cart}
+            setCart={setCart}
+          />
           <SlArrowDown />
         </form>
       </div>
 
       <div className="container mx-auto mb-10">
         <div className="flex items-center justify-around mt-5">
-          <Shoppage img={Jeans} title="Blue Rageed Jeans" />
-          <Shoppage img={Jacket} title="Brown Leather Jacket" />
-          <Shoppage img={Dress} title="Slim Banquet Dress" />
-          <Shoppage img={Denim} title="Blue Denim Jacket" />
+          <Shoppage
+            img={Jeans}
+            title="Blue Rageed Jeans"
+            price="Ksh 2,250"
+            cart={cart}
+            setCart={setCart}
+          />
+          <Shoppage
+            img={Jacket}
+            title="Brown Leather Jacket"
+            price="Ksh 2,250"
+            cart={cart}
+            setCart={setCart}
+          />
+          <Shoppage
+            img={Dress}
+            title="Slim Banquet Dress"
+            price="Ksh 2,250"
+            cart={cart}
+            setCart={setCart}
+          />
+          <Shoppage
+            img={Denim}
+            title="Blue Denim Jacket"
+            price="Ksh 2,250"
+            cart={cart}
+            setCart={setCart}
+          />
         </div>
         <div className="flex items-center justify-around mt-5">
-          <Shoppage img={Leather} title="Brown Leather Jacket" />
-          <Shoppage img={Quartz} title="Quartz Men’s Watch" />
-          <Shoppage img={Women} title="Women Denim Jeans" />
-          <Shoppage img={Brown} title="Brown handbag" />
+          <Shoppage
+            img={Leather}
+            title="Brown Leather Jacket"
+            price="Ksh 2,250"
+            cart={cart}
+            setCart={setCart}
+          />
+          <Shoppage
+            img={Quartz}
+            title="Quartz Men’s Watch"
+            price="Ksh 2,250"
+            cart={cart}
+            setCart={setCart}
+          />
+          <Shoppage
+            img={Women}
+            title="Women Denim Jeans"
+            price="Ksh 2,250"
+            cart={cart}
+            setCart={setCart}
+          />
+          <Shoppage
+            img={Brown}
+            title="Brown handbag"
+            price="Ksh 2,250"
+            cart={cart}
+            setCart={setCart}
+          />
         </div>
         <div className="flex items-center justify-around mt-5">
-          <Shoppage img={Unisex} title="Unisex Graphic T-shirt" />
-          <Shoppage img={Bomber} title="Black Bomber Jacket" />
-          <Shoppage img={Pallazo} title="Pleated pallazo Pants" />
-          <Shoppage img={Shoes} title="Pure Leather Shoes" />
+          <Shoppage
+            img={Unisex}
+            title="Unisex Graphic T-shirt"
+            price="Ksh 2,250"
+            cart={cart}
+            setCart={setCart}
+          />
+          <Shoppage
+            img={Bomber}
+            title="Black Bomber Jacket"
+            price="Ksh 2,250"
+            cart={cart}
+            setCart={setCart}
+          />
+          <Shoppage
+            img={Pallazo}
+            title="Pleated pallazo Pants"
+            price="Ksh 2,250"
+            cart={cart}
+            setCart={setCart}
+          />
+          <Shoppage
+            img={Shoes}
+            title="Pure Leather Shoes"
+            price="Ksh 2,250"
+            cart={cart}
+            setCart={setCart}
+          />
         </div>
         <div className="flex items-center justify-around mt-5">
-          <Shoppage img={Serpenti} title="Purple Serpenti purse" />
-          <Shoppage img={Airforce} title="Unisex Airforce Sneakers" />
-          <Shoppage img={Cocktail} title="Blue Cocktail Dress" />
-          <Shoppage img={Crop} title="Off-Shoulder Crop Top" />
+          <Shoppage
+            img={Serpenti}
+            title="Purple Serpenti purse"
+            price="Ksh 2,250"
+            cart={cart}
+            setCart={setCart}
+          />
+          <Shoppage
+            img={Airforce}
+            title="Unisex Airforce Sneakers"
+            price="Ksh 2,250"
+            cart={cart}
+            setCart={setCart}
+          />
+          <Shoppage
+            img={Cocktail}
+            title="Blue Cocktail Dress"
+            price="Ksh 2,250"
+            cart={cart}
+            setCart={setCart}
+          />
+          <Shoppage
+            img={Crop}
+            title="Off-Shoulder Crop Top"
+            price="Ksh 2,250"
+            cart={cart}
+            setCart={setCart}
+          />
         </div>
         <div className="flex items-center justify-around mt-5">
-          <Shoppage img={Airsense} title="Airsense Pleated Pants" />
-          <Shoppage img={Smartwatch} title="Classy Smart Watch" />
-          <Shoppage img={Heels} title="Blue Platform Heels" />
-          <Shoppage img={Sweater} title="Strip Knitted Sweater" />
+          <Shoppage
+            img={Airsense}
+            title="Airsense Pleated Pants"
+            price="Ksh 2,250"
+            cart={cart}
+            setCart={setCart}
+          />
+          <Shoppage
+            img={Smartwatch}
+            title="Classy Smart Watch"
+            price="Ksh 2,250"
+            cart={cart}
+            setCart={setCart}
+          />
+          <Shoppage
+            img={Heels}
+            title="Blue Platform Heels"
+            price="Ksh 2,250"
+            cart={cart}
+            setCart={setCart}
+          />
+          <Shoppage
+            img={Sweater}
+            title="Strip Knitted Sweater"
+            price="Ksh 2,250"
+            cart={cart}
+            setCart={setCart}
+          />
         </div>
       </div>
       <div className="flex items-center justify-center group">
         <div className="rounded-full border border-gray-700 w-[80px] h-[80px] m-8 flex items-center justify-center text-4xl">
-          <IoIosArrowBack size={40} className="text-gray-400 cursor-pointer " />
+          <IoIosArrowBack
+            size={40}
+            className="text-gray-400 cursor-pointer "
+            cart={cart}
+            setCart={setCart}
+          />
         </div>
         <div className="text-gray-400 rounded-full border border-gray-700 w-[80px] h-[80px] m-8 flex items-center justify-center text-4xl group-hover:bg-green-300 ">
           1

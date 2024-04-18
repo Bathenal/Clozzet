@@ -6,10 +6,9 @@ import Jacket from "../assets/images/denim.png";
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 
-function Featuredcollections({cart, setCart}) {
+function Featuredcollections(cart, setCart) {
   return (
-    <div   cart={cart} setCart={setCart} 
-    >
+    <div>
       <h2 className="text-4xl flex flex-wrap justify-center mt-4">
         Featured Collection
       </h2>

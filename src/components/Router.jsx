@@ -22,8 +22,8 @@ function Router() {
         <Route
           path="/"
           element={
-            <Layout>
-              <Home cart={Cart} setCart={setCart} />
+            <Layout cart={cart} setCart={setCart} >
+              <Home cart={cart} setCart={setCart} />
             </Layout>
           }
         />
@@ -31,15 +31,15 @@ function Router() {
         <Route
           path="/shop"
           element={
-            <Layout>
-              <Shop cart={Cart} setCart={setCart}/>
+            <Layout  cart={cart} setCart={setCart}>
+              <Shop cart={cart} setCart={setCart}/>
             </Layout>
           }
         />
         <Route
           path="/login"
           element={
-            <Layout>
+            <Layout cart={cart} setCart={setCart}>
               <Login />
             </Layout>
           }
@@ -47,7 +47,7 @@ function Router() {
         <Route
           path="/signup"
           element={
-            <Layout>
+            <Layout cart={cart} setCart={setCart}>
               <Signup />
             </Layout>
           }
@@ -55,32 +55,32 @@ function Router() {
         <Route
           path="/cart"
           element={
-            <Layout>
-              <Cart  cart={Cart} setCart={setCart}/>
+            <Layout cart={cart} setCart={setCart}>
+              <Cart  cart={cart} setCart={setCart}/>
             </Layout>
           }
         />
         <Route
           path="/addproduct"
           element={
-            <Layout>
-              <Addproduct />
+            <Layout cart={cart} setCart={setCart}>
+              <Addproduct cart={cart} setCart={setCart}/>
             </Layout>
           }
         />
         <Route
           path="/aboutus"
           element={
-            <Layout>
-              <Aboutus />
+            <Layout cart={cart} setCart={setCart}>
+              <Aboutus cart={cart} setCart={setCart}/>
             </Layout>
           }
         />
         <Route
           path="/singleproduct"
           element={
-            <Layout>
-              <Singleproduct />
+            <Layout cart={cart} setCart={setCart}>
+              <Singleproduct cart={cart} setCart={setCart} />
             </Layout>
           }
         />
