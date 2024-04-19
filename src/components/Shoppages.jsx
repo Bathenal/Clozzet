@@ -26,7 +26,7 @@ import { SlArrowDown } from "react-icons/sl";
 import { IoIosArrowForward } from "react-icons/io";
 import { IoIosArrowBack } from "react-icons/io";
 
-function Shoppages({ cart, setCart }) {
+function Shoppages({ cart, setCart, cartCopy, setCartCopy }) {
   return (
     <div>
       <div className="flex justify-center items-center">
@@ -45,6 +45,8 @@ function Shoppages({ cart, setCart }) {
             placeholder="Filter Category"
             cart={cart}
             setCart={setCart}
+            cartCopy={cartCopy}
+            setCartCopy={setCartCopy}
           />
           <SlArrowDown />
         </form>
@@ -58,6 +60,8 @@ function Shoppages({ cart, setCart }) {
             price="Ksh 2,250"
             cart={cart}
             setCart={setCart}
+            cartCopy={cartCopy}
+            setCartCopy={setCartCopy}
           />
           <Shoppage
             img={Jacket}
@@ -65,6 +69,8 @@ function Shoppages({ cart, setCart }) {
             price="Ksh 2,250"
             cart={cart}
             setCart={setCart}
+            cartCopy={cartCopy}
+            setCartCopy={setCartCopy}
           />
           <Shoppage
             img={Dress}
@@ -72,6 +78,8 @@ function Shoppages({ cart, setCart }) {
             price="Ksh 2,250"
             cart={cart}
             setCart={setCart}
+            cartCopy={cartCopy}
+            setCartCopy={setCartCopy}
           />
           <Shoppage
             img={Denim}
@@ -79,6 +87,8 @@ function Shoppages({ cart, setCart }) {
             price="Ksh 2,250"
             cart={cart}
             setCart={setCart}
+            cartCopy={cartCopy}
+            setCartCopy={setCartCopy}
           />
         </div>
         <div className="flex items-center justify-around mt-5">
@@ -88,6 +98,8 @@ function Shoppages({ cart, setCart }) {
             price="Ksh 2,250"
             cart={cart}
             setCart={setCart}
+            cartCopy={cartCopy}
+            setCartCopy={setCartCopy}
           />
           <Shoppage
             img={Quartz}
@@ -95,6 +107,8 @@ function Shoppages({ cart, setCart }) {
             price="Ksh 2,250"
             cart={cart}
             setCart={setCart}
+            cartCopy={cartCopy}
+            setCartCopy={setCartCopy}
           />
           <Shoppage
             img={Women}
@@ -102,6 +116,8 @@ function Shoppages({ cart, setCart }) {
             price="Ksh 2,250"
             cart={cart}
             setCart={setCart}
+            cartCopy={cartCopy}
+            setCartCopy={setCartCopy}
           />
           <Shoppage
             img={Brown}
@@ -109,6 +125,8 @@ function Shoppages({ cart, setCart }) {
             price="Ksh 2,250"
             cart={cart}
             setCart={setCart}
+            cartCopy={cartCopy}
+            setCartCopy={setCartCopy}
           />
         </div>
         <div className="flex items-center justify-around mt-5">
@@ -118,6 +136,8 @@ function Shoppages({ cart, setCart }) {
             price="Ksh 2,250"
             cart={cart}
             setCart={setCart}
+            cartCopy={cartCopy}
+            setCartCopy={setCartCopy}
           />
           <Shoppage
             img={Bomber}
@@ -125,6 +145,8 @@ function Shoppages({ cart, setCart }) {
             price="Ksh 2,250"
             cart={cart}
             setCart={setCart}
+            cartCopy={cartCopy}
+            setCartCopy={setCartCopy}
           />
           <Shoppage
             img={Pallazo}
@@ -132,6 +154,8 @@ function Shoppages({ cart, setCart }) {
             price="Ksh 2,250"
             cart={cart}
             setCart={setCart}
+            cartCopy={cartCopy}
+            setCartCopy={setCartCopy}
           />
           <Shoppage
             img={Shoes}
@@ -139,6 +163,8 @@ function Shoppages({ cart, setCart }) {
             price="Ksh 2,250"
             cart={cart}
             setCart={setCart}
+            cartCopy={cartCopy}
+            setCartCopy={setCartCopy}
           />
         </div>
         <div className="flex items-center justify-around mt-5">
@@ -148,6 +174,8 @@ function Shoppages({ cart, setCart }) {
             price="Ksh 2,250"
             cart={cart}
             setCart={setCart}
+            cartCopy={cartCopy}
+            setCartCopy={setCartCopy}
           />
           <Shoppage
             img={Airforce}
@@ -155,6 +183,8 @@ function Shoppages({ cart, setCart }) {
             price="Ksh 2,250"
             cart={cart}
             setCart={setCart}
+            cartCopy={cartCopy}
+            setCartCopy={setCartCopy}
           />
           <Shoppage
             img={Cocktail}
@@ -162,13 +192,16 @@ function Shoppages({ cart, setCart }) {
             price="Ksh 2,250"
             cart={cart}
             setCart={setCart}
+            cartCopy={cartCopy}
+            setCartCopy={setCartCopy}
           />
           <Shoppage
             img={Crop}
             title="Off-Shoulder Crop Top"
             price="Ksh 2,250"
             cart={cart}
-            setCart={setCart}
+            cartCopy={cartCopy}
+            setCartCopy={setCartCopy}
           />
         </div>
         <div className="flex items-center justify-around mt-5">
@@ -178,6 +211,8 @@ function Shoppages({ cart, setCart }) {
             price="Ksh 2,250"
             cart={cart}
             setCart={setCart}
+            cartCopy={cartCopy}
+            setCartCopy={setCartCopy}
           />
           <Shoppage
             img={Smartwatch}
@@ -185,6 +220,8 @@ function Shoppages({ cart, setCart }) {
             price="Ksh 2,250"
             cart={cart}
             setCart={setCart}
+            cartCopy={cartCopy}
+            setCartCopy={setCartCopy}
           />
           <Shoppage
             img={Heels}
@@ -192,6 +229,8 @@ function Shoppages({ cart, setCart }) {
             price="Ksh 2,250"
             cart={cart}
             setCart={setCart}
+            cartCopy={cartCopy}
+            setCartCopy={setCartCopy}
           />
           <Shoppage
             img={Sweater}
@@ -199,6 +238,8 @@ function Shoppages({ cart, setCart }) {
             price="Ksh 2,250"
             cart={cart}
             setCart={setCart}
+            cartCopy={cartCopy}
+            setCartCopy={setCartCopy}
           />
         </div>
       </div>
@@ -209,6 +250,8 @@ function Shoppages({ cart, setCart }) {
             className="text-gray-400 cursor-pointer "
             cart={cart}
             setCart={setCart}
+            cartCopy={cartCopy}
+            setCartCopy={setCartCopy}
           />
         </div>
         <div className="text-gray-400 rounded-full border border-gray-700 w-[80px] h-[80px] m-8 flex items-center justify-center text-4xl group-hover:bg-green-300 ">

@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
 import { IoIosTrash } from "react-icons/io";
-function CartProduct({ img, title, size, price, cart }) {
-  const [cartCopy, setCartCopy] = useState([]);
-  useEffect(() => {
-    cart && setCartCopy([...cart]);
-  }, []);
+function CartProduct({ img, title, size, price, cart,setCartCopy,cartCopy }) {
+  const handleDelete = () => {
+    setCartCopy([]);
+  };
+
+
 
   function handleCartACtions(action, product) {
     if (action === "increment") {
@@ -33,6 +34,9 @@ function CartProduct({ img, title, size, price, cart }) {
               onClick={() =>
                 handleCartACtions("decrement", { img, title, price })
               }
+              disabled={
+                cartCopy.filter((item) => item.title === title).length === 1
+              }
             >
               -
             </button>
@@ -48,8 +52,21 @@ function CartProduct({ img, title, size, price, cart }) {
             </button>
           </div>
           <div className="flex justify-center items-center gap-1">
-            <p>{price}</p>
-            <IoIosTrash className="text-red-500 group-hover:block hidden" />
+            <p>
+              {`Ksh. ${cartCopy
+                .filter((item) => item.title === title)
+                .reduce(
+                  (acc, curr) =>
+                    acc +
+                    parseInt(curr.price.replace("Ksh ", "").replace(",", "")),
+                  0
+                )
+                .toLocaleString()}`}
+            </p>
+            <IoIosTrash
+              className="text-red-500 cursor-pointer group-hover:block hidden"
+              onClick={handleDelete}
+            />
           </div>
         </div>
       </div>
